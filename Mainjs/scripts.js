@@ -42,6 +42,8 @@ document.addEventListener("DOMContentLoaded", () => {
     logoutButton.addEventListener("click", logout);
   }
 
+  console.log(window.location.pathname);
+  
   if (window.location.pathname === "/home.html") {
     const usernameSpan = document.getElementById("username");
     const user = JSON.parse(localStorage.getItem("currentUser"));
